@@ -1,0 +1,109 @@
+[General]
+ip-mode = v4-only
+ipv6-vif = off
+sni-sniffing = false
+disable-stun = true
+udp-fallback-mode = REJECT
+wifi-access-http-port = 816
+wifi-access-socks5-port = 2544
+allow-wifi-access = false
+interface-mode = auto
+test-timeout = 10
+disconnect-on-policy-change = false
+dns-server = 223.5.5.5,119.29.29.29
+proxy-test-url = https://1.1.1.1/generate_204
+internet-test-url = https://wifi.vivo.com.cn/generate_204
+resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
+geoip-url = https://geodata.kelee.one/Country-Masaiki.mmdb
+ipasn-url = https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+
+[Remote Proxy]
+
+[Proxy Group]
+Nexitally Proxy = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png
+Tag Proxy = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
+SNTP Proxy = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
+CTC Proxy = select,CTC,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
+AI = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
+Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+Meta = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/meta.png
+Twitter = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+Wikimedia = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/wikipedia.png
+🇹🇼Stream = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png
+Google = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/google(2).png
+Microsoft = select,Tag,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png
+Apple Music = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applemusic.png
+Apple = select,DIRECT,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+WeChat = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/wechat.png
+Spotify = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green).png
+Adobe = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobecreativecloud.png
+TikTok = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/tiktok.png
+Binance = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bian.png
+Game = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(3).png
+EMBY = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/emby.png
+Final = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+
+[Proxy Chain]
+
+[Rule]
+DOMAIN-SUFFIX,ncdn1.sntp.uk,SNTP Proxy
+DOMAIN-SUFFIX,sub1.sntp.me,SNTP Proxy
+DOMAIN-SUFFIX,rama991.siamparagon.org,DIRECT
+DOMAIN-SUFFIX,tagss.pro,EMBY
+DOMAIN-SUFFIX,post.cn2gias.uk,EMBY
+DOMAIN-SUFFIX,pe.cn2gias.uk,EMBY
+FINAL,Final
+
+[Remote Rule]
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/AI.list, policy=AI, tag=AI, enabled=true
+https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled=true
+https://rule.kelee.one/Loon/Facebook.lsr, policy=Meta, tag=Meta, enabled=true
+https://rule.kelee.one/Loon/Twitter.lsr, policy=Twitter, tag=Twitter, enabled=true
+https://rule.kelee.one/Loon/Wikimedia.lsr, policy=Wikimedia, tag=Wikimedia, enabled=true
+https://rule.kelee.one/Loon/Netflix.lsr, policy=🇹🇼Stream, tag=Netflix, enabled=true
+https://rule.kelee.one/Loon/HBO.lsr, policy=🇹🇼Stream, tag=HBO, enabled=true
+https://rule.kelee.one/Loon/HBOAsia.lsr, policy=🇹🇼Stream, tag=HBOAsia, enabled=true
+https://rule.kelee.one/Loon/HBOHK.lsr, policy=🇹🇼Stream, tag=HBOHK, enabled=true
+https://rule.kelee.one/Loon/HBOUSA.lsr, policy=🇹🇼Stream, tag=HBOUSA, enabled=true
+https://rule.kelee.one/Loon/Disney.lsr, policy=🇹🇼Stream, tag=Disney, enabled=true
+https://rule.kelee.one/Loon/YouTube.lsr, policy=Google, tag=YouTube, enabled=true
+https://rule.kelee.one/Loon/Google.lsr, policy=Google, tag=Google, enabled=true
+https://rule.kelee.one/Loon/Microsoft.lsr, policy=Microsoft, tag=Microsoft, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AppleMusic/AppleMusic.list, policy=Apple Music, tag=Apple Music, enabled=true
+https://rule.kelee.one/Loon/Apple.lsr, policy=Apple, tag=Apple, enabled=true
+https://rule.kelee.one/Loon/WeChat.lsr, policy=WeChat, tag=Wechat, enabled=true
+https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=true
+https://rule.kelee.one/Loon/Adobe.lsr, policy=Adobe, tag=Adobe, enabled=true
+https://rule.kelee.one/Loon/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=true
+https://rule.kelee.one/Loon/Binance.lsr, policy=Binance, tag=Binance, enabled=true
+https://rule.kelee.one/Loon/Game.lsr, policy=Game, tag=Game, enabled=true
+https://rule.kelee.one/Loon/Twitch.lsr, policy=Final, tag=Twitch, enabled=true
+https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REAGION, enabled=true
+
+[Rewrite]
+
+[Host]
+
+[Script]
+
+[Plugin]
+https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, policy=Tag Proxy, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/ValorantBible_remove_ads.lpx, enabled=true
+https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, enabled=true
+https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+
+[MITM]

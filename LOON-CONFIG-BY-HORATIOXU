@@ -9,8 +9,9 @@ wifi-access-socks5-port = 2544
 allow-wifi-access = false
 interface-mode = auto
 test-timeout = 10
-disconnect-on-policy-change = false
 dns-server = 223.5.5.5,119.29.29.29
+doh3-server = https://hk1.pro.xns.one/4xLLOPYw_04/Xiaochen_Loon_iPhone/dns-query
+disconnect-on-policy-change = false
 proxy-test-url = https://1.1.1.1/generate_204
 internet-test-url = https://wifi.vivo.com.cn/generate_204
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
@@ -22,10 +23,8 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 [Remote Proxy]
 
 [Proxy Group]
-Nexitally Proxy = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png
 Tag Proxy = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
 SNTP Proxy = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
-CTC Proxy = select,CTC,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
 AI = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
 Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 Meta = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/meta.png
@@ -90,20 +89,9 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REAGI
 [Script]
 
 [Plugin]
-https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, policy=Tag Proxy, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/ValorantBible_remove_ads.lpx, enabled=true
-https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, enabled=true
-https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin, enabled=true
+https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin, pin=true, enabled=true
+https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
 
 [MITM]

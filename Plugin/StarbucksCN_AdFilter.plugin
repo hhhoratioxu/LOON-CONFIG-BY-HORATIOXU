@@ -1,13 +1,12 @@
 #!name=Starbucks CN 首页去广告（MITM）
-#!desc=一键订阅版：通过 HTTPS MITM 改写星巴克中国 App 的首页/启动页 JSON 响应；默认避开登录、会员、点单和支付接口。
+#!desc=通过 HTTPS MITM 改写星巴克中国 App 的首页/启动页 JSON 响应；默认避开登录、会员、点单和支付接口。
 #!author=Xu
-#!homepage=https://github.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU
-#!version=1.1.0
+#!version=1.0.0
 #!system=iOS
 #!tag=去广告,Starbucks,MITM
 
 [Script]
-http-response ^https:\/\/([^\/]+\.)?starbucks\.com\.cn\/.* script-path=https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Plugin/starbucks_cn_ad_filter.js, requires-body=true, timeout=10, tag=Starbucks CN 去广告, enable=true
+http-response ^https:\/\/([^\/]+\.)?starbucks\.com\.cn\/.* script-path=starbucks_cn_ad_filter.js, requires-body=true, timeout=10, tag=Starbucks CN 去广告
 
 [MITM]
-hostname = %APPEND% starbucks.com.cn, *.starbucks.com.cn
+hostname = %APPEND% *.starbucks.com.cn

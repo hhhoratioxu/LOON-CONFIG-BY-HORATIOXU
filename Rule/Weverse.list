@@ -2,20 +2,22 @@
 # Maintained by Horatio
 # Last updated: 2026-08-27
 #
-# Catch Weverse-owned and Weverse-branded hostnames, including
-# *.weverse.io, *.weverseshop.io and Weverse Akamai CDN hostnames.
-DOMAIN-KEYWORD,weverse
-
 # Core Weverse domains
 DOMAIN-SUFFIX,weverse.io
 DOMAIN-SUFFIX,weverseshop.io
 DOMAIN-SUFFIX,wevpstatic.net
 
-# Known Weverse media CDN
-DOMAIN,weverse-rmcnmv.akamaized.net
-
-# Weverse / NAVER APIs and media infrastructure
+# Weverse / NAVER API hosts observed in the Weverse app
 DOMAIN,global.apis.naver.com
+DOMAIN,jp.apis.naver.com
+DOMAIN,apis.naver.com
+
+# Weverse / NAVER Akamai media and resource CDN hosts
+DOMAIN,weverse-rmcnmv.akamaized.net
+DOMAIN,resources-rmcnmv.akamaized.net
+DOMAIN,g-aegis-naver.akamaized.net
+
+# Additional Weverse / NAVER media infrastructure
 DOMAIN,weverse-live.pstatic.net
 DOMAIN,ssl.pstatic.net
 

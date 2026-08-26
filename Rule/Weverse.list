@@ -1,0 +1,15 @@
+# Weverse Rules for Loon
+# Maintained by Horatio
+# Last updated: 2026-08-27
+#
+# Core Weverse domains
+DOMAIN-SUFFIX,weverse.io
+DOMAIN-SUFFIX,wevpstatic.net
+
+# Weverse / NAVER APIs and media infrastructure
+DOMAIN,global.apis.naver.com
+DOMAIN,weverse-live.pstatic.net
+DOMAIN,ssl.pstatic.net
+
+# NAVER logging endpoint used by Weverse
+DOMAIN,nelo2-col.navercorp.com

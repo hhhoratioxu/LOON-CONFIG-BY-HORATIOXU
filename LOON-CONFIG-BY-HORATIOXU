@@ -37,6 +37,7 @@ Apple Music = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATS
 Apple = select,DIRECT,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
 WeChat = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/wechat.png
 Spotify = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/spotify(green).png
+Weverse = select,DIRECT,Tag
 Adobe = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Adobecreativecloud.png
 TikTok = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/tiktok.png
 Binance = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bian.png
@@ -74,6 +75,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 https://rule.kelee.one/Loon/Apple.lsr, policy=Apple, tag=Apple, enabled=true
 https://rule.kelee.one/Loon/WeChat.lsr, policy=WeChat, tag=Wechat, enabled=true
 https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=true
+https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Rule/Weverse.list, policy=Weverse, tag=Weverse, enabled=true
 https://rule.kelee.one/Loon/Adobe.lsr, policy=Adobe, tag=Adobe, enabled=true
 https://rule.kelee.one/Loon/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=true
 https://rule.kelee.one/Loon/Binance.lsr, policy=Binance, tag=Binance, enabled=true

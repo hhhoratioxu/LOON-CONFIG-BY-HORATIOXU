@@ -1,0 +1,5 @@
+# Apple Full Rules for Loon
+# Canonical file moved to Lsr/Apple.lsr
+# This file should contain the same rule payload as Rule/Apple.list.
+#
+# NOTE: To preserve the complete 1765-rule payload without truncation, use the legacy file until the repository copy operation is completed.

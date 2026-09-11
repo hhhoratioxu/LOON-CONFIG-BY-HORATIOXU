@@ -1,42 +1,25 @@
 # Horatio Loon
 
-A curated collection of Loon routing rules, plugins, scripts, and configurations maintained by Horatio.
+A personal collection of Loon rules, plugins and configurations maintained by Horatio.
 
 ## Structure
 
-- `Lsr/` — Loon routing rules (`.lsr`)
-- `Lpx/` — Loon plugins (`.lpx`)
-- `Script/` — JavaScript and helper scripts
-- `Config/` — Loon configuration files
-- `Rule/` — legacy compatibility paths kept for existing subscriptions
+```text
+Rules/   Loon routing rules (.lsr)
+Script/  Loon plugins (.lpx)
+Config/  Loon configuration files
+```
 
 ## Rules
 
-### Apple
+- `Rules/Apple.lsr` — Apple full routing rules, including Apple Intelligence, Siri, APNs Push, iCloud, Private Relay, App Store, Music, TV, Maps and related services.
+- `Rules/Weverse.lsr` — Weverse routing rules.
 
-Canonical path: `Lsr/Apple.lsr`
+## Raw links
 
-Raw URL:
+```text
+https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Rules/Apple.lsr
+https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Rules/Weverse.lsr
+```
 
-`https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Lsr/Apple.lsr`
-
-The Apple ruleset covers Apple Intelligence, Siri, APNs Push, iCloud, Private Relay, Apple ID, App Store, TestFlight, Apple Music, Apple TV, Apple News, Maps, Find My, Wallet, software updates, developer services, Apple CDN/CNAMEs, China-specific Apple services, IPv4/IPv6 ranges, and legacy Apple domains.
-
-### Weverse
-
-Canonical path: `Lsr/Weverse.lsr`
-
-Raw URL:
-
-`https://raw.githubusercontent.com/hhhoratioxu/LOON-CONFIG-BY-HORATIOXU/main/Lsr/Weverse.lsr`
-
-## Compatibility
-
-Existing `Rule/*.list` URLs are intentionally kept so current Loon subscriptions do not break. New rules should use the `Lsr/*.lsr` naming convention.
-
-## Naming
-
-- `.lsr` — Loon routing rule
-- `.lpx` — Loon plugin
-
-> Repository name planned: `Horatio-Loon`.
+> After the repository is renamed to `Horatio-Loon`, replace `LOON-CONFIG-BY-HORATIOXU` in the URLs with `Horatio-Loon`.

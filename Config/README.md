@@ -1,3 +1,3 @@
 # Config
 
-Loon configuration files live here.
+This directory contains Loon configuration files and related configuration resources.
